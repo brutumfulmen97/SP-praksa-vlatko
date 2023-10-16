@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   border: 0;
+  font-family: roboto, sans-serif;
 }
 
 img {
@@ -14,23 +15,55 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  color: red;
-}
-h1 h2 {
-  color: blue;
-}
-
 header {
   background: #b50014;
 }
 header .header__main {
+  height: 93px;
   padding-inline: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+header .header__main .header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #b50014;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+header .header__main .header__nav {
+  padding-left: 200px;
+  width: 100%;
+}
+header .header__main .header__nav div {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+header .header__main .header__nav div a {
+  color: white;
+}
+header .header__pdf {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
 header .header__radno-vreme {
-  background: #000;
+  background: #252525;
+  height: 30px;
   padding-inline: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header p {
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

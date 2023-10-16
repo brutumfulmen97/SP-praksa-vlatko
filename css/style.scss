@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     border: 0;
+    font-family: roboto, sans-serif;
 }
 
 img {
@@ -14,25 +15,62 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    color: red;
-    h2 {
-        color: blue;
-    }
-}
-
 header {
     background: #b50014;
 
     .header__main {
+        height: 93px;
         padding-inline: 10%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .header__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #b50014;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+        }
+
+        .header__nav {
+            padding-left: 200px;
+            width: 100%;
+
+            div {
+                display: flex;
+                margin-left: auto;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .header__pdf {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
     }
 
     .header__radno-vreme {
-        background: #000;
+        background: #252525;
+        height: 30px;
         padding-inline: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    p {
+        font-size: 14px;
     }
 }

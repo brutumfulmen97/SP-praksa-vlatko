@@ -17,6 +17,7 @@ a {
 
 header {
     background: #b50014;
+    color: white;
 
     .header__main {
         height: 93px;
@@ -80,6 +81,7 @@ header {
 }
 
 .mesar {
+    color: white;
     position: relative;
     .preko {
         background: rgb(0, 0, 0, 0.3);
@@ -116,6 +118,9 @@ header {
     justify-content: space-between;
     gap: 3rem;
     padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: black;
+    color: white;
 
     .levi {
         flex: 1;
@@ -176,4 +181,54 @@ header {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
+    color: white;
+}
+
+.druga {
+    background: #a62120;
+    display: flex;
+    padding-left: 20%;
+    color: white;
+
+    .info {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+            width: 60%;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        li {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        button {
+            width: 174px;
+            height: 47px;
+            background-color: white;
+            color: black;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+    }
+
+    .slika {
+        width: 50vw;
+        border: 2px solid green;
+        margin-left: auto;
+    }
 }

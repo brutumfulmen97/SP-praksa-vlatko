@@ -75,19 +75,89 @@ header p {
 .mesar {
   position: relative;
 }
-.mesar div {
+.mesar .preko {
   background: rgba(0, 0, 0, 0.3);
   width: 600px;
   position: absolute;
   top: calc(50% - 175px);
   height: 350px;
+}
+.mesar .preko .teskt {
+  margin-left: 40%;
+  width: 50%;
+  height: 350px;
+  display: grid;
+  place-content: center;
   text-align: center;
 }
-.mesar div h1 {
+.mesar .preko .teskt h1 {
   font-size: 38px;
 }
-.mesar div p {
+.mesar .preko .teskt p {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+}
+
+.dry-aged {
+  width: 100%;
+  padding-inline: 20%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-top: 6rem;
+}
+.dry-aged .levi {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid green;
+}
+.dry-aged .levi p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.dry-aged .levi h2 {
+  font-size: 32px;
+}
+.dry-aged .levi h3 {
+  font-size: 22px;
+  margin-top: 5px;
+}
+.dry-aged .desno {
+  border: 1px solid red;
+  flex: 1;
+  flex-shrink: 0;
+}
+.dry-aged .desno .gornji {
+  width: 100%;
+  background: green;
+}
+.dry-aged .desno .donji {
+  border: 1px solid yellow;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.dry-aged .desno .donji img {
+  width: 30%;
+}
+
+.dugme-primary {
+  background: #a62120;
+  border-radius: 30px;
+  width: 174px;
+  height: 50px;
+  border: 1px solid white;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

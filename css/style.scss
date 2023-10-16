@@ -8,7 +8,7 @@
 }
 
 img {
-    max-width: 100%;
+    // max-width: 100%;
 }
 
 a {
@@ -133,7 +133,7 @@ header {
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        border: 1px solid green;
+        // border: 1px solid green;
 
         p {
             font-size: 16px;
@@ -151,16 +151,16 @@ header {
     }
 
     .desno {
-        border: 1px solid red;
+        // border: 1px solid red;
         flex: 1;
         flex-shrink: 0;
 
         .gornji {
             width: 100%;
-            background: green;
+            // background: green;
         }
         .donji {
-            border: 1px solid yellow;
+            // border: 1px solid yellow;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -233,7 +233,7 @@ header {
 
     .slika {
         width: 50vw;
-        border: 2px solid green;
+        // border: 2px solid green;
         margin-left: auto;
     }
 }
@@ -298,7 +298,6 @@ header {
 
     .slika {
         width: 50vw;
-        border: 2px solid green;
         margin-right: auto;
     }
 }
@@ -347,5 +346,120 @@ header {
                 text-align: center;
             }
         }
+    }
+}
+
+.jre {
+    width: 100%;
+    padding-inline: 20%;
+    padding-top: 6rem;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    .slika {
+        width: 100%;
+        img {
+            margin-left: 25%;
+            width: 50%;
+        }
+    }
+
+    .info {
+        width: 100%;
+        h2 {
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0em;
+            width: 80%;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.medalje {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 20%;
+    h2 {
+        margin-top: -60px;
+        color: white;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .nagrade {
+        display: flex;
+        // border: 3px solid green;
+        gap: 2rem;
+    }
+
+    .medalja {
+        // border: 2px solid blue;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    p {
+        color: rgb(255, 255, 255, 0.5);
+        width: 80%;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+.klizac {
+    background: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-bottom: 6rem;
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+        margin-bottom: 2rem;
+        color: rgb(255, 255, 255, 0.5);
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0em;
+    }
+
+    .kartice {
+        display: flex;
+        gap: 2rem;
     }
 }

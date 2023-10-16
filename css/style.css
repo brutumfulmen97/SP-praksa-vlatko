@@ -7,10 +7,6 @@
   font-family: roboto, sans-serif;
 }
 
-img {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
 }
@@ -121,7 +117,6 @@ header p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  border: 1px solid green;
 }
 .dry-aged .levi p {
   font-size: 16px;
@@ -136,16 +131,13 @@ header p {
   margin-top: 5px;
 }
 .dry-aged .desno {
-  border: 1px solid red;
   flex: 1;
   flex-shrink: 0;
 }
 .dry-aged .desno .gornji {
   width: 100%;
-  background: green;
 }
 .dry-aged .desno .donji {
-  border: 1px solid yellow;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -213,7 +205,6 @@ header p {
 }
 .druga .slika {
   width: 50vw;
-  border: 2px solid green;
   margin-left: auto;
 }
 
@@ -276,7 +267,6 @@ header p {
 }
 .peta .slika {
   width: 50vw;
-  border: 2px solid green;
   margin-right: auto;
 }
 
@@ -321,4 +311,109 @@ header p {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+.jre {
+  width: 100%;
+  padding-inline: 20%;
+  padding-top: 6rem;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.jre .slika {
+  width: 100%;
+}
+.jre .slika img {
+  margin-left: 25%;
+  width: 50%;
+}
+.jre .info {
+  width: 100%;
+}
+.jre .info h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.medalje {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-inline: 20%;
+}
+.medalje h2 {
+  margin-top: -60px;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.medalje .nagrade {
+  display: flex;
+  gap: 2rem;
+}
+.medalje .medalja {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.medalje .medalja img {
+  width: 120px;
+  height: 120px;
+}
+.medalje p {
+  color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.klizac {
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding-bottom: 6rem;
+}
+.klizac h2,
+.klizac p {
+  text-align: center;
+}
+.klizac p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.klizac h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+}
+.klizac .kartice {
+  display: flex;
+  gap: 2rem;
 }/*# sourceMappingURL=style.css.map */

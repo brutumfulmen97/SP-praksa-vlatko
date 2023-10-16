@@ -77,6 +77,9 @@ header p {
   color: white;
   position: relative;
 }
+.mesar img {
+  width: 100vw;
+}
 .mesar .preko {
   background: rgba(0, 0, 0, 0.3);
   width: 600px;
@@ -212,4 +215,28 @@ header p {
   width: 50vw;
   border: 2px solid green;
   margin-left: auto;
+}
+
+.section3 {
+  padding-top: 6rem;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.section3 p {
+  width: 40%;
+  text-align: center;
+}
+
+.logo-divider {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

@@ -83,6 +83,11 @@ header {
 .mesar {
     color: white;
     position: relative;
+
+    img {
+        width: 100vw;
+    }
+
     .preko {
         background: rgb(0, 0, 0, 0.3);
         width: 600px;
@@ -231,4 +236,28 @@ header {
         border: 2px solid green;
         margin-left: auto;
     }
+}
+
+.section3 {
+    padding-top: 6rem;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    p {
+        width: 40%;
+        text-align: center;
+    }
+}
+
+.logo-divider {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

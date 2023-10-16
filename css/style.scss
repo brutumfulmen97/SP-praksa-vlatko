@@ -85,7 +85,7 @@ header {
     position: relative;
 
     img {
-        width: 100vw;
+        width: 100%;
     }
 
     .preko {
@@ -304,6 +304,11 @@ header {
 
 .daska {
     position: relative;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
 
     .filter {
         width: 100%;
@@ -500,7 +505,7 @@ footer {
         padding-bottom: 1rem;
 
         div {
-            border: 1px solid green;
+            // border: 1px solid green;
             width: 100%;
         }
 

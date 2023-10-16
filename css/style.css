@@ -74,7 +74,7 @@ header p {
   position: relative;
 }
 .mesar img {
-  width: 100vw;
+  width: 100%;
 }
 .mesar .preko {
   background: rgba(0, 0, 0, 0.3);
@@ -272,6 +272,10 @@ header p {
 
 .daska {
   position: relative;
+  width: 100%;
+}
+.daska img {
+  width: 100%;
 }
 .daska .filter {
   width: 100%;
@@ -453,7 +457,6 @@ footer .gore {
   padding-bottom: 1rem;
 }
 footer .gore div {
-  border: 1px solid green;
   width: 100%;
 }
 footer .gore .info {

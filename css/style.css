@@ -7,6 +7,11 @@
   font-family: roboto, sans-serif;
 }
 
+img {
+  max-width: 100%;
+  margin-bottom: -4px;
+}
+
 a {
   text-decoration: none;
 }
@@ -136,6 +141,7 @@ header p {
 }
 .dry-aged .desno .gornji {
   width: 100%;
+  margin-bottom: 1rem;
 }
 .dry-aged .desno .donji {
   width: 100%;
@@ -234,6 +240,7 @@ header p {
 
 .jela {
   background: black;
+  width: 100%;
   display: flex;
   padding-inline: 20%;
   gap: 5rem;
@@ -362,6 +369,7 @@ header p {
   line-height: 42px;
   letter-spacing: 0em;
   text-align: left;
+  margin-right: 30px;
 }
 .medalje .nagrade {
   display: flex;
@@ -398,6 +406,19 @@ header p {
   justify-content: center;
   gap: 5rem;
   padding-bottom: 6rem;
+  position: relative;
+}
+.klizac .strelice {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 80px;
+  background: transparent;
 }
 .klizac h2,
 .klizac p {
@@ -461,6 +482,7 @@ footer .gore div {
 }
 footer .gore .info {
   display: flex;
+  align-items: center;
 }
 footer .gore .info .tekst {
   margin-left: 10px;
@@ -468,6 +490,12 @@ footer .gore .info .tekst {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+footer .gore .info .tekst p {
+  margin-bottom: 9px;
+}
+footer .gore .info .tekst :last-child {
+  margin-bottom: 0;
 }
 footer .gore .logo {
   display: grid;
@@ -477,6 +505,7 @@ footer .gore .drustvene {
   color: white;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 1rem;
 }
 footer .dole {
@@ -487,4 +516,7 @@ footer .dole {
   justify-content: space-between;
   color: #e9caca;
   font-size: 12px;
+}
+footer .dole span {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

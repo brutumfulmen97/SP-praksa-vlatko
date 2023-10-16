@@ -8,7 +8,8 @@
 }
 
 img {
-    // max-width: 100%;
+    max-width: 100%;
+    margin-bottom: -4px;
 }
 
 a {
@@ -157,6 +158,7 @@ header {
 
         .gornji {
             width: 100%;
+            margin-bottom: 1rem;
             // background: green;
         }
         .donji {
@@ -264,6 +266,7 @@ header {
 
 .jela {
     background: black;
+    width: 100%;
     display: flex;
     padding-inline: 20%;
     gap: 5rem;
@@ -400,6 +403,7 @@ header {
         line-height: 42px;
         letter-spacing: 0em;
         text-align: left;
+        margin-right: 30px;
     }
 
     .nagrade {
@@ -441,6 +445,21 @@ header {
     justify-content: center;
     gap: 5rem;
     padding-bottom: 6rem;
+
+    position: relative;
+
+    .strelice {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 80px;
+        background: transparent;
+    }
 
     h2,
     p {
@@ -511,6 +530,7 @@ footer {
 
         .info {
             display: flex;
+            align-items: center;
 
             .tekst {
                 margin-left: 10px;
@@ -518,6 +538,14 @@ footer {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
+                p {
+                    margin-bottom: 9px;
+                }
+
+                :last-child {
+                    margin-bottom: 0;
+                }
             }
         }
 
@@ -530,6 +558,7 @@ footer {
             color: white;
             display: flex;
             align-items: center;
+            justify-content: flex-end;
             gap: 1rem;
         }
     }
@@ -541,5 +570,9 @@ footer {
         justify-content: space-between;
         color: #e9caca;
         font-size: 12px;
+
+        span {
+            color: white;
+        }
     }
 }

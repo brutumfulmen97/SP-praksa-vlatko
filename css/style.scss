@@ -26,6 +26,8 @@ header {
         align-items: center;
 
         .header__logo {
+            width: 150px;
+            aspect-ratio: 1/1;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -33,6 +35,7 @@ header {
             background: #b50014;
             padding: 10px;
             position: absolute;
+            z-index: 10;
             top: 0;
         }
 
@@ -48,6 +51,7 @@ header {
                 gap: 10px;
                 a {
                     color: white;
+                    font-size: 16px;
                 }
             }
         }
@@ -72,5 +76,28 @@ header {
 
     p {
         font-size: 14px;
+    }
+}
+
+.mesar {
+    position: relative;
+    div {
+        background: rgb(0, 0, 0, 0.3);
+        width: 600px;
+        position: absolute;
+        top: calc(50% - 175px);
+        height: 350px;
+
+        text-align: center;
+
+        h1 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+        }
     }
 }

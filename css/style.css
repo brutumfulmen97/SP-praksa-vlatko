@@ -437,4 +437,51 @@ header p {
   background-color: #2a2a2a;
   width: 429px;
   height: 414px;
+}
+
+footer {
+  background: #a62120;
+  padding-top: 1rem;
+  width: 100%;
+}
+footer .gore {
+  width: 100%;
+  padding-inline: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+footer .gore div {
+  border: 1px solid green;
+  width: 100%;
+}
+footer .gore .info {
+  display: flex;
+}
+footer .gore .info .tekst {
+  margin-left: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .gore .logo {
+  display: grid;
+  place-content: center;
+}
+footer .gore .drustvene {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .dole {
+  width: 100%;
+  background: #66000b;
+  padding-inline: 20%;
+  display: flex;
+  justify-content: space-between;
+  color: #e9caca;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,522 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: roboto, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: -4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #b50014;
+  color: white;
+}
+header .header__main {
+  height: 93px;
+  padding-inline: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__main .header__logo {
+  width: 150px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #b50014;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+header .header__main .header__nav {
+  padding-left: 200px;
+  width: 100%;
+}
+header .header__main .header__nav div {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+header .header__main .header__nav div a {
+  color: white;
+  font-size: 16px;
+}
+header .header__pdf {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+header .header__radno-vreme {
+  background: #252525;
+  height: 30px;
+  padding-inline: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header p {
+  font-size: 14px;
+}
+
+.mesar {
+  color: white;
+  position: relative;
+}
+.mesar img {
+  width: 100%;
+}
+.mesar .preko {
+  background: rgba(0, 0, 0, 0.3);
+  width: 600px;
+  position: absolute;
+  top: calc(50% - 175px);
+  height: 350px;
+}
+.mesar .preko .teskt {
+  margin-left: 40%;
+  width: 50%;
+  height: 350px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.mesar .preko .teskt h1 {
+  font-size: 38px;
+}
+.mesar .preko .teskt p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.dry-aged {
+  width: 100%;
+  padding-inline: 20%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: black;
+  color: white;
+}
+.dry-aged .levi {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.dry-aged .levi p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.dry-aged .levi h2 {
+  font-size: 32px;
+}
+.dry-aged .levi h3 {
+  font-size: 22px;
+  margin-top: 5px;
+}
+.dry-aged .desno {
+  flex: 1;
+  flex-shrink: 0;
+}
+.dry-aged .desno .gornji {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.dry-aged .desno .donji {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.dry-aged .desno .donji img {
+  width: 30%;
+}
+
+.dugme-primary {
+  background: #a62120;
+  border-radius: 30px;
+  width: 174px;
+  height: 50px;
+  border: 1px solid white;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+.druga {
+  background: #a62120;
+  display: flex;
+  padding-left: 20%;
+  color: white;
+}
+.druga .info {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.druga .info h2 {
+  width: 60%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.druga .info li {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.druga .info button {
+  width: 174px;
+  height: 47px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.druga .slika {
+  width: 50vw;
+  margin-left: auto;
+}
+
+.section3 {
+  padding-top: 6rem;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.section3 p {
+  width: 40%;
+  text-align: center;
+}
+
+.logo-divider {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jela {
+  background: black;
+  width: 100%;
+  display: flex;
+  padding-inline: 20%;
+  gap: 5rem;
+  padding-bottom: 6rem;
+}
+
+.peta {
+  background: #a62120;
+  display: flex;
+  padding-right: 20%;
+  color: white;
+}
+.peta .info {
+  width: 30%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.peta .info h2 {
+  width: 60%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.peta .info h3 {
+  margin-top: 10px;
+}
+.peta .info p {
+  margin-top: 30px;
+}
+.peta .slika {
+  width: 50vw;
+  margin-right: auto;
+}
+
+.daska {
+  position: relative;
+  width: 100%;
+}
+.daska img {
+  width: 100%;
+}
+.daska .filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.daska .filter .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.daska .filter .info h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.daska .filter .info button {
+  width: 174px;
+  height: 47px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.jre {
+  width: 100%;
+  padding-inline: 20%;
+  padding-top: 6rem;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.jre .slika {
+  width: 100%;
+}
+.jre .slika img {
+  margin-left: 25%;
+  width: 50%;
+}
+.jre .info {
+  width: 100%;
+}
+.jre .info h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.medalje {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-inline: 20%;
+}
+.medalje h2 {
+  margin-top: -60px;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 30px;
+}
+.medalje .nagrade {
+  display: flex;
+  gap: 2rem;
+}
+.medalje .medalja {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.medalje .medalja img {
+  width: 120px;
+  height: 120px;
+}
+.medalje p {
+  color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.klizac {
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding-bottom: 6rem;
+  position: relative;
+}
+.klizac .strelice {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 80px;
+  background: transparent;
+}
+.klizac h2,
+.klizac p {
+  text-align: center;
+}
+.klizac p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.klizac h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+}
+.klizac .kartice {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.klizac .kartice div {
+  width: 317px;
+  height: 257px;
+  background: #1b1b1b;
+  color: rgba(255, 255, 255, 0.705);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 15px;
+}
+.klizac .kartice div h4 {
+  color: rgba(255, 255, 255, 0.737254902);
+}
+.klizac .kartice .active {
+  background-color: #2a2a2a;
+  width: 429px;
+  height: 414px;
+}
+
+footer {
+  background: #a62120;
+  padding-top: 1rem;
+  width: 100%;
+}
+footer .gore {
+  width: 100%;
+  padding-inline: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+footer .gore div {
+  width: 100%;
+}
+footer .gore .info {
+  display: flex;
+  align-items: center;
+}
+footer .gore .info .tekst {
+  margin-left: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .gore .info .tekst p {
+  margin-bottom: 9px;
+}
+footer .gore .info .tekst :last-child {
+  margin-bottom: 0;
+}
+footer .gore .logo {
+  display: grid;
+  place-content: center;
+}
+footer .gore .drustvene {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+footer .dole {
+  width: 100%;
+  background: #66000b;
+  padding-inline: 20%;
+  display: flex;
+  justify-content: space-between;
+  color: #e9caca;
+  font-size: 12px;
+}
+footer .dole span {
+  color: white;
+}

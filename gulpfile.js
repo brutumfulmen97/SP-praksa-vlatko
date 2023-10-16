@@ -1,14 +1,12 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
-
-function buildStyles() {
+exports.buildStyles = function () {
     return gulp
-        .src("./sass/**/*.scss")
+        .src("./css/**/*.scss")
         .pipe(sass.sync().on("error", sass.logError))
-        .pipe(gulp.dest("./css"));
-}
+        .pipe(gulp.dest("./test"));
+};
 
-exports.buildStyles = buildStyles;
 exports.watch = function () {
-    gulp.watch("./sass/**/*.scss", ["sass"]);
+    gulp.watch("./css/**/*.scss", ["sass"]);
 };

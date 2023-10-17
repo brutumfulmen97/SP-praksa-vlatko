@@ -17,6 +17,18 @@ img {
   margin-bottom: -4px;
 }
 
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 14px;
+}
+
 a {
   text-decoration: none;
 }
@@ -33,6 +45,10 @@ a {
   color: white;
   padding: 1rem 2rem;
   margin-right: 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 header {
@@ -63,16 +79,18 @@ header .header__nav {
   padding-left: 200px;
   width: 100%;
 }
-header .header__nav .header__nav-xl {
-  display: flex;
+header .header__nav div {
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
 }
-header .header__nav .header__nav-xl a {
+header .header__nav div a {
   color: white;
   font-size: 16px;
+}
+header .header__nav .header__nav-xl {
+  display: flex;
 }
 header .header__nav .header__nav-md {
   display: none;
@@ -98,9 +116,6 @@ header .header__opentime div {
   margin-right: 0.25rem;
   margin-bottom: 0.2rem;
 }
-header p {
-  font-size: 14px;
-}
 
 .landing {
   color: white;
@@ -123,9 +138,6 @@ header p {
   display: grid;
   place-content: center;
   text-align: center;
-}
-.landing .landing__content .landing__content-text h1 {
-  font-size: 38px;
 }
 .landing .landing__content .landing__content-text p {
   font-size: 16px;
@@ -152,12 +164,8 @@ header p {
   justify-content: space-between;
 }
 .section__dry-aged .section__dry-aged-left p {
-  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-}
-.section__dry-aged .section__dry-aged-left h2 {
-  font-size: 32px;
 }
 .section__dry-aged .section__dry-aged-left h3 {
   font-size: 22px;
@@ -197,7 +205,6 @@ header p {
 }
 .section__kurs .section__kurs-info h2 {
   width: 60%;
-  font-size: 32px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
@@ -289,7 +296,6 @@ header p {
 }
 .section__spices .section__spices-info h2 {
   width: 60%;
-  font-size: 32px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
@@ -334,7 +340,6 @@ header p {
 }
 .section__cta .filter .section__cta-info h2 {
   color: white;
-  font-size: 32px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0em;
@@ -374,7 +379,6 @@ header p {
 }
 .section__partner .section__partner-info h2 {
   color: white;
-  font-size: 32px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0em;
@@ -393,7 +397,6 @@ header p {
 .section__awards h2 {
   margin-top: -60px;
   color: white;
-  font-size: 32px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
@@ -415,7 +418,6 @@ header p {
 .section__awards .section__awards-awards div p {
   color: rgba(255, 255, 255, 0.5);
   width: 80%;
-  font-size: 16px;
   font-weight: 300;
   line-height: 19px;
   letter-spacing: 0em;
@@ -450,7 +452,6 @@ header p {
   text-align: center;
 }
 .klizac p {
-  font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 0em;
@@ -458,7 +459,6 @@ header p {
   color: rgba(255, 255, 255, 0.5);
 }
 .klizac h2 {
-  font-size: 32px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
@@ -548,9 +548,38 @@ footer .footer__main-copyright span {
 
 @media screen and (max-width: 1330px) {
   .header__nav-xl {
-    display: none;
+    display: none !important;
   }
   .header__nav-md {
-    display: flex;
+    display: flex !important;
+  }
+  h1 {
+    font-size: 28px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
+  .landing__content-text {
+    margin-left: 30% !important;
+  }
+  button {
+    padding: 0.5rem 1rem !important;
+    font-size: 12px !important;
+  }
+  .section__dry-aged,
+  .section__menu,
+  .section__partner,
+  .section__awards,
+  .footer__main {
+    padding-inline: 10% !important;
+  }
+  .section__kurs {
+    padding-left: 10% !important;
+  }
+  .section__spices {
+    padding-right: 10% !important;
   }
 }/*# sourceMappingURL=style.css.map */

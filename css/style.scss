@@ -12,17 +12,28 @@
 1330px
 
 */
-
 $primary-color: #b50014;
 $secondary-color: #121212;
-$padding-inline: 20%;
 $padding-y: 6rem;
 
-$md: 1330px;
+$lg: 1330px;
+$md: 1024px;
 
 img {
     max-width: 100%;
     margin-bottom: -4px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 14px;
 }
 
 a {
@@ -42,6 +53,10 @@ a {
     color: white;
     padding: 1rem 2rem;
     margin-right: 1rem;
+}
+
+.hidden {
+    display: none;
 }
 
 header {
@@ -74,8 +89,7 @@ header {
         padding-left: 200px;
         width: 100%;
 
-        .header__nav-xl {
-            display: flex;
+        div {
             margin-left: auto;
             justify-content: flex-end;
             align-items: center;
@@ -84,6 +98,10 @@ header {
                 color: white;
                 font-size: 16px;
             }
+        }
+
+        .header__nav-xl {
+            display: flex;
         }
 
         .header__nav-md {
@@ -114,10 +132,6 @@ header {
             margin-bottom: 0.2rem;
         }
     }
-
-    p {
-        font-size: 14px;
-    }
 }
 
 .landing {
@@ -143,10 +157,6 @@ header {
             place-content: center;
             text-align: center;
 
-            h1 {
-                font-size: 38px;
-            }
-
             p {
                 font-size: 16px;
                 font-weight: 300;
@@ -158,7 +168,7 @@ header {
 
 .section__dry-aged {
     width: 100%;
-    padding-inline: $padding-inline;
+    padding-inline: 20%;
     display: flex;
     justify-content: space-between;
     gap: 3rem;
@@ -176,14 +186,10 @@ header {
         // border: 1px solid green;
 
         p {
-            font-size: 16px;
             font-weight: 300;
             line-height: 24px;
         }
 
-        h2 {
-            font-size: 32px;
-        }
         h3 {
             font-size: 22px;
             margin-top: 5px;
@@ -217,7 +223,7 @@ header {
 .section__kurs {
     background: $primary-color;
     display: flex;
-    padding-left: $padding-inline;
+    padding-left: 20%;
     color: white;
 
     .section__kurs-info {
@@ -228,7 +234,6 @@ header {
         justify-content: space-between;
         h2 {
             width: 60%;
-            font-size: 32px;
             font-weight: 700;
             line-height: 42px;
             letter-spacing: 0em;
@@ -291,7 +296,7 @@ header {
     background: black;
     width: 100%;
     display: flex;
-    padding-inline: $padding-inline;
+    padding-inline: 20%;
     gap: 3rem;
     padding-bottom: $padding-y;
     div {
@@ -315,7 +320,7 @@ header {
 .section__spices {
     background: #a62120;
     display: flex;
-    padding-right: $padding-inline;
+    padding-right: 20%;
     color: white;
 
     .section__spices-info {
@@ -324,7 +329,6 @@ header {
         padding-bottom: $padding-y;
         h2 {
             width: 60%;
-            font-size: 32px;
             font-weight: 700;
             line-height: 42px;
             letter-spacing: 0em;
@@ -373,7 +377,6 @@ header {
 
             h2 {
                 color: white;
-                font-size: 32px;
                 font-weight: 700;
                 line-height: 26px;
                 letter-spacing: 0em;
@@ -397,7 +400,7 @@ header {
 
 .section__partner {
     width: 100%;
-    padding-inline: $padding-inline;
+    padding-inline: 20%;
     padding-top: $padding-y;
     background: black;
     color: white;
@@ -417,7 +420,6 @@ header {
         width: 100%;
         h2 {
             color: white;
-            font-size: 32px;
             font-weight: 700;
             line-height: 26px;
             letter-spacing: 0em;
@@ -433,11 +435,10 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-inline: $padding-inline;
+    padding-inline: 20%;
     h2 {
         margin-top: -60px;
         color: white;
-        font-size: 32px;
         font-weight: 700;
         line-height: 42px;
         letter-spacing: 0em;
@@ -461,7 +462,6 @@ header {
             p {
                 color: rgb(255, 255, 255, 0.5);
                 width: 80%;
-                font-size: 16px;
                 font-weight: 300;
                 line-height: 19px;
                 letter-spacing: 0em;
@@ -502,7 +502,6 @@ header {
     }
 
     p {
-        font-size: 18px;
         font-weight: 700;
         line-height: 18px;
         letter-spacing: 0em;
@@ -511,7 +510,6 @@ header {
     }
 
     h2 {
-        font-size: 32px;
         font-weight: 700;
         line-height: 42px;
         letter-spacing: 0em;
@@ -552,7 +550,7 @@ footer {
     width: 100%;
     .footer__main {
         width: 100%;
-        padding-inline: $padding-inline;
+        padding-inline: 20%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -612,12 +610,49 @@ footer {
     }
 }
 
-@media screen and (max-width: $md) {
+@media screen and (max-width: $lg) {
     .header__nav-xl {
-        display: none;
+        display: none !important;
     }
 
     .header__nav-md {
-        display: flex;
+        display: flex !important;
+    }
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+
+    .landing__content-text {
+        margin-left: 30% !important;
+    }
+
+    button {
+        padding: 0.5rem 1rem !important;
+        font-size: 12px !important;
+    }
+
+    .section__dry-aged,
+    .section__menu,
+    .section__partner,
+    .section__awards,
+    .footer__main {
+        padding-inline: 10% !important;
+    }
+
+    .section__kurs {
+        padding-left: 10% !important;
+    }
+
+    .section__spices {
+        padding-right: 10% !important;
     }
 }

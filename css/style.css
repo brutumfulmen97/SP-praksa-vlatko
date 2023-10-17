@@ -264,9 +264,10 @@ header .header__opentime div {
 }
 .section__kurs .section__kurs-info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: space-around;
+  margin-right: auto;
 }
 .section__kurs .section__kurs-info h2 {
   width: 60%;
@@ -673,9 +674,13 @@ footer .footer__main-copyright span {
   .section__kurs-image {
     width: 100% !important;
   }
+  .section__kurs-image img {
+    width: 100% !important;
+  }
   .section__kurs-info {
     width: 100% !important;
     flex-direction: column;
+    align-items: center !important;
     gap: 2rem;
     padding: 3rem 0;
   }
@@ -688,6 +693,9 @@ footer .footer__main-copyright span {
     display: block;
   }
   .section__spices-image {
+    width: 100% !important;
+  }
+  .section__spices-image img {
     width: 100% !important;
   }
   .section__spices-info {

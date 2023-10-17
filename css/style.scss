@@ -18,6 +18,7 @@ $padding-y: 6rem;
 
 $lg: 1330px;
 $md: 1024px;
+$sm: 768px;
 
 img {
     max-width: 100%;
@@ -148,6 +149,10 @@ header {
                 }
             }
         }
+    }
+
+    .header__nav-sm {
+        display: none;
     }
 
     .header__pdf {
@@ -766,5 +771,37 @@ footer {
         justify-content: center;
         gap: 1rem;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .header__main {
+        padding-inline: 2% !important;
+        height: 60px !important;
+    }
+    .header__logo {
+        width: 100px !important;
+    }
+
+    .header__nav-md {
+        display: none !important;
+    }
+
+    .header__nav-sm {
+        display: block !important;
+        min-width: 10px;
+        max-width: 50px;
+        margin-left: 2rem;
+        padding: 5px;
+        svg {
+            path {
+                fill: white;
+            }
+            width: 100%;
+        }
+    }
+
+    .header__opentime {
+        padding-inline: 2% !important;
     }
 }

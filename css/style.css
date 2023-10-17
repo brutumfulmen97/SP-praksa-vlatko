@@ -128,6 +128,9 @@ header .header__nav .header__nav-md .dropdown .dropdown-content a:hover {
 header .header__nav .header__nav-md .dropdown:hover .dropdown-content {
   display: block;
 }
+header .header__nav-sm {
+  display: none;
+}
 header .header__pdf {
   margin-left: 1rem;
   display: flex;
@@ -673,5 +676,33 @@ footer .footer__main-copyright span {
   }
   .section__spices-info p {
     width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__main {
+    padding-inline: 2% !important;
+    height: 60px !important;
+  }
+  .header__logo {
+    width: 100px !important;
+  }
+  .header__nav-md {
+    display: none !important;
+  }
+  .header__nav-sm {
+    display: block !important;
+    min-width: 10px;
+    max-width: 50px;
+    margin-left: 2rem;
+    padding: 5px;
+  }
+  .header__nav-sm svg {
+    width: 100%;
+  }
+  .header__nav-sm svg path {
+    fill: white;
+  }
+  .header__opentime {
+    padding-inline: 2% !important;
   }
 }/*# sourceMappingURL=style.css.map */

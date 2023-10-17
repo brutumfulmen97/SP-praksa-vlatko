@@ -613,4 +613,65 @@ footer .footer__main-copyright span {
   .section__spices {
     padding-right: 10% !important;
   }
+  .lokacija {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section__dry-aged,
+  .section__menu,
+  .section__partner,
+  .section__awards,
+  .footer__main,
+  .footer__main-copyright {
+    padding-inline: 5% !important;
+  }
+  .landing__content {
+    position: relative !important;
+    width: 100% !important;
+    background: #000 !important;
+    padding-top: 3rem;
+  }
+  .section__kurs {
+    display: block;
+    margin-left: auto !important;
+    padding-left: 0 !important;
+  }
+  .section__kurs-image {
+    width: 100% !important;
+  }
+  .section__kurs-info {
+    width: 100% !important;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+  .section__kurs-info h2 {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .section__spices {
+    padding-right: 0 !important;
+    display: block;
+  }
+  .section__spices-image {
+    width: 100% !important;
+  }
+  .section__spices-info {
+    padding: 3rem 0;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  .section__spices-info h2 {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .section__spices-info p {
+    width: 70%;
+  }
 }/*# sourceMappingURL=style.css.map */

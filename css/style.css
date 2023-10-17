@@ -80,7 +80,6 @@ header .header__nav {
   width: 100%;
 }
 header .header__nav div {
-  margin-left: auto;
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
@@ -94,6 +93,40 @@ header .header__nav .header__nav-xl {
 }
 header .header__nav .header__nav-md {
   display: none;
+}
+header .header__nav .header__nav-md .dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+header .header__nav .header__nav-md .dropdown .dropdown-content {
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header .header__nav .header__nav-md .dropdown .dropdown-content :first-child {
+  border-radius: 10px 10px 0 0;
+}
+header .header__nav .header__nav-md .dropdown .dropdown-content :last-child {
+  border-radius: 0 0 10px 10px;
+}
+header .header__nav .header__nav-md .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header .header__nav .header__nav-md .dropdown .dropdown-content a:hover {
+  background-color: #f56f6f;
+}
+header .header__nav .header__nav-md .dropdown:hover .dropdown-content {
+  display: block;
 }
 header .header__pdf {
   margin-left: 1rem;
@@ -175,18 +208,18 @@ header .header__opentime div {
   flex: 1;
   flex-shrink: 0;
 }
-.section__dry-aged .section__dry-aged-right :first-child {
+.section__dry-aged .section__dry-aged-right .gore {
   width: 100%;
   margin-bottom: 1rem;
 }
-.section__dry-aged .section__dry-aged-right :last-child {
+.section__dry-aged .section__dry-aged-right .dole {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3%;
 }
-.section__dry-aged .section__dry-aged-right :last-child img {
+.section__dry-aged .section__dry-aged-right .dole img {
   width: 30%;
 }
 
@@ -197,11 +230,10 @@ header .header__opentime div {
   color: white;
 }
 .section__kurs .section__kurs-info {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .section__kurs .section__kurs-info h2 {
   width: 60%;
@@ -286,13 +318,12 @@ header .header__opentime div {
 .section__spices {
   background: #a62120;
   display: flex;
+  align-items: center;
   padding-right: 20%;
   color: white;
 }
 .section__spices .section__spices-info {
   width: 30%;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 .section__spices .section__spices-info h2 {
   width: 60%;

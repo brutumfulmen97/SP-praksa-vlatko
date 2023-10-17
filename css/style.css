@@ -16,6 +16,21 @@ a {
   text-decoration: none;
 }
 
+.btn-primary {
+  background: #a62120;
+  border-radius: 30px;
+  width: 174px;
+  height: 50px;
+  border: 1px solid white;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
 header {
   background: #b50014;
   color: white;
@@ -70,25 +85,31 @@ header .header__radno-vreme {
   justify-content: flex-end;
   align-items: center;
 }
+header .header__radno-vreme div {
+  display: grid;
+  place-content: center;
+  margin-right: 0.25rem;
+  margin-bottom: 0.2rem;
+}
 header p {
   font-size: 14px;
 }
 
-.mesar {
+.landing {
   color: white;
   position: relative;
 }
-.mesar img {
+.landing img {
   width: 100%;
 }
-.mesar .preko {
+.landing .landing__content {
   background: rgba(0, 0, 0, 0.3);
   width: 600px;
   position: absolute;
   top: calc(50% - 175px);
   height: 350px;
 }
-.mesar .preko .teskt {
+.landing .landing__content .landing__content-text {
   margin-left: 40%;
   width: 50%;
   height: 350px;
@@ -96,16 +117,16 @@ header p {
   place-content: center;
   text-align: center;
 }
-.mesar .preko .teskt h1 {
+.landing .landing__content .landing__content-text h1 {
   font-size: 38px;
 }
-.mesar .preko .teskt p {
+.landing .landing__content .landing__content-text p {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
 }
 
-.dry-aged {
+.section__dry-aged {
   width: 100%;
   padding-inline: 20%;
   display: flex;
@@ -116,73 +137,58 @@ header p {
   background: black;
   color: white;
 }
-.dry-aged .levi {
+.section__dry-aged .section__dry-aged-left {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
-.dry-aged .levi p {
+.section__dry-aged .section__dry-aged-left p {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
 }
-.dry-aged .levi h2 {
+.section__dry-aged .section__dry-aged-left h2 {
   font-size: 32px;
 }
-.dry-aged .levi h3 {
+.section__dry-aged .section__dry-aged-left h3 {
   font-size: 22px;
   margin-top: 5px;
 }
-.dry-aged .desno {
+.section__dry-aged .section__dry-aged-right {
   flex: 1;
   flex-shrink: 0;
 }
-.dry-aged .desno .gornji {
+.section__dry-aged .section__dry-aged-right :first-child {
   width: 100%;
   margin-bottom: 1rem;
 }
-.dry-aged .desno .donji {
+.section__dry-aged .section__dry-aged-right :last-child {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
-.dry-aged .desno .donji img {
+.section__dry-aged .section__dry-aged-right :last-child img {
   width: 30%;
 }
 
-.dugme-primary {
-  background: #a62120;
-  border-radius: 30px;
-  width: 174px;
-  height: 50px;
-  border: 1px solid white;
-  margin-left: 10px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: white;
-}
-
-.druga {
+.section__kurs {
   background: #a62120;
   display: flex;
   padding-left: 20%;
   color: white;
 }
-.druga .info {
+.section__kurs .section__kurs-info {
   padding-top: 6rem;
   padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.druga .info h2 {
+.section__kurs .section__kurs-info h2 {
   width: 60%;
   font-size: 32px;
   font-weight: 700;
@@ -190,14 +196,14 @@ header p {
   letter-spacing: 0em;
   text-align: left;
 }
-.druga .info li {
+.section__kurs .section__kurs-info li {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
 }
-.druga .info button {
+.section__kurs .section__kurs-info button {
   width: 174px;
   height: 47px;
   background-color: white;
@@ -209,12 +215,12 @@ header p {
   letter-spacing: 0em;
   text-align: center;
 }
-.druga .slika {
+.section__kurs .section__kurs-image {
   width: 50vw;
   margin-left: auto;
 }
 
-.section3 {
+.section__centered {
   padding-top: 6rem;
   background: black;
   color: white;
@@ -224,7 +230,7 @@ header p {
   align-items: center;
   gap: 3rem;
 }
-.section3 p {
+.section__centered p {
   width: 40%;
   text-align: center;
 }
@@ -238,7 +244,7 @@ header p {
   justify-content: center;
 }
 
-.jela {
+.section__menu {
   background: black;
   width: 100%;
   display: flex;
@@ -246,19 +252,35 @@ header p {
   gap: 5rem;
   padding-bottom: 6rem;
 }
+.section__menu div {
+  position: relative;
+}
+.section__menu div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+  letter-spacing: 5px;
+}
 
-.peta {
+.section__spices {
   background: #a62120;
   display: flex;
   padding-right: 20%;
   color: white;
 }
-.peta .info {
+.section__spices .section__spices-info {
   width: 30%;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-.peta .info h2 {
+.section__spices .section__spices-info h2 {
   width: 60%;
   font-size: 32px;
   font-weight: 700;
@@ -266,25 +288,25 @@ header p {
   letter-spacing: 0em;
   text-align: left;
 }
-.peta .info h3 {
+.section__spices .section__spices-info h3 {
   margin-top: 10px;
 }
-.peta .info p {
+.section__spices .section__spices-info p {
   margin-top: 30px;
 }
-.peta .slika {
+.section__spices .section__spices-image {
   width: 50vw;
   margin-right: auto;
 }
 
-.daska {
+.section__cta {
   position: relative;
   width: 100%;
 }
-.daska img {
+.section__cta img {
   width: 100%;
 }
-.daska .filter {
+.section__cta .filter {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -292,7 +314,7 @@ header p {
   left: 0;
   background: rgba(0, 0, 0, 0.6);
 }
-.daska .filter .info {
+.section__cta .filter .section__cta-info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -303,7 +325,7 @@ header p {
   align-items: center;
   gap: 2rem;
 }
-.daska .filter .info h2 {
+.section__cta .filter .section__cta-info h2 {
   color: white;
   font-size: 32px;
   font-weight: 700;
@@ -311,7 +333,7 @@ header p {
   letter-spacing: 0em;
   text-align: center;
 }
-.daska .filter .info button {
+.section__cta .filter .section__cta-info button {
   width: 174px;
   height: 47px;
   background-color: white;
@@ -324,7 +346,7 @@ header p {
   text-align: center;
 }
 
-.jre {
+.section__partner {
   width: 100%;
   padding-inline: 20%;
   padding-top: 6rem;
@@ -333,17 +355,18 @@ header p {
   display: flex;
   justify-content: center;
 }
-.jre .slika {
+.section__partner .section__partner-image {
   width: 100%;
 }
-.jre .slika img {
+.section__partner .section__partner-image img {
   margin-left: 25%;
   width: 50%;
 }
-.jre .info {
+.section__partner .section__partner-info {
+  padding-left: 5rem;
   width: 100%;
 }
-.jre .info h2 {
+.section__partner .section__partner-info h2 {
   color: white;
   font-size: 32px;
   font-weight: 700;
@@ -353,7 +376,7 @@ header p {
   margin-bottom: 3rem;
 }
 
-.medalje {
+.section__awards {
   background: #000;
   display: flex;
   align-items: center;
@@ -361,7 +384,7 @@ header p {
   width: 100%;
   padding-inline: 20%;
 }
-.medalje h2 {
+.section__awards h2 {
   margin-top: -60px;
   color: white;
   font-size: 32px;
@@ -371,11 +394,11 @@ header p {
   text-align: left;
   margin-right: 30px;
 }
-.medalje .nagrade {
+.section__awards .section__awards-awards {
   display: flex;
   gap: 2rem;
 }
-.medalje .medalja {
+.section__awards .section__awards-awards div {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -383,11 +406,11 @@ header p {
   justify-content: flex-start;
   gap: 1rem;
 }
-.medalje .medalja img {
+.section__awards .section__awards-awards div img {
   width: 120px;
   height: 120px;
 }
-.medalje p {
+.section__awards .section__awards-awards div p {
   color: rgba(255, 255, 255, 0.5);
   width: 80%;
   font-size: 16px;
@@ -469,7 +492,7 @@ footer {
   padding-top: 1rem;
   width: 100%;
 }
-footer .gore {
+footer .footer__main {
   width: 100%;
   padding-inline: 20%;
   display: flex;
@@ -477,38 +500,38 @@ footer .gore {
   align-items: center;
   padding-bottom: 1rem;
 }
-footer .gore div {
+footer .footer__main div {
   width: 100%;
 }
-footer .gore .info {
+footer .footer__main .footer__main-info {
   display: flex;
   align-items: center;
 }
-footer .gore .info .tekst {
+footer .footer__main .footer__main-info div {
   margin-left: 10px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-footer .gore .info .tekst p {
+footer .footer__main .footer__main-info div p {
   margin-bottom: 9px;
 }
-footer .gore .info .tekst :last-child {
+footer .footer__main .footer__main-info div :last-child {
   margin-bottom: 0;
 }
-footer .gore .logo {
+footer .footer__main .footer__main-logo {
   display: grid;
   place-content: center;
 }
-footer .gore .drustvene {
+footer .footer__main .footer__main-socials {
   color: white;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
 }
-footer .dole {
+footer .footer__main-copyright {
   width: 100%;
   background: #66000b;
   padding-inline: 20%;
@@ -517,6 +540,6 @@ footer .dole {
   color: #e9caca;
   font-size: 12px;
 }
-footer .dole span {
+footer .footer__main-copyright span {
   color: white;
 }/*# sourceMappingURL=style.css.map */

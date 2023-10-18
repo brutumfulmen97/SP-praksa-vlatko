@@ -389,6 +389,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    img {
+        width: 100%;
+    }
 }
 
 .section__menu {
@@ -837,6 +841,14 @@ footer {
         justify-content: center;
         gap: 1rem;
         text-align: center;
+    }
+
+    .logo-divider {
+        height: 30vh;
+        img {
+            height: 100% !important;
+            object-fit: cover !important;
+        }
     }
 }
 

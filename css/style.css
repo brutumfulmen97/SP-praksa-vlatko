@@ -337,6 +337,9 @@ header .header__opentime div {
   align-items: center;
   justify-content: center;
 }
+.logo-divider img {
+  width: 100%;
+}
 
 .section__menu {
   background: black;
@@ -731,6 +734,14 @@ footer .footer__main-copyright span {
   }
   .section__spices-info p {
     width: 70%;
+  }
+  .logo-divider {
+    height: 30vh;
+  }
+  .logo-divider img {
+    height: 100% !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
   }
 }
 @media screen and (max-width: 768px) {

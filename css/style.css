@@ -8,6 +8,12 @@
   color: white;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+  background: #000;
+}
+
 /**
 1330px
 
@@ -136,6 +142,9 @@ header .header__nav-sm {
   padding: 0.5rem;
   cursor: pointer;
   display: none;
+}
+header .header__nav-sm .hamburger {
+  padding: 0rem 0.3rem;
 }
 header .header__nav-sm .mobile-menu {
   position: absolute;

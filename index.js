@@ -13,8 +13,20 @@ closeBtn.addEventListener("click", () => {
 });
 
 const swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 150,
+        scale: 0.8,
+        depth: 50,
+        modifier: 1,
+        slideShadows: true,
+    },
     speed: 400,
-    spaceBetween: 100,
+    // spaceBetween: 100,
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -28,10 +40,5 @@ const swiper = new Swiper(".swiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: ".swiper-scrollbar",
     },
 });

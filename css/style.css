@@ -515,22 +515,55 @@ header .header__opentime div {
   text-align: center;
 }
 
-.swiper {
+.section__swiper {
   background: #000;
   width: 100%;
-  height: 50vh;
   color: white;
-  padding-inline: 20%;
+  padding-bottom: 2rem;
 }
-.swiper .swiper-slide {
-  background: green;
-  width: 150px;
+.section__swiper .slider-button {
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  place-content: center;
 }
-.swiper .swiper-slide .slide {
+.section__swiper .swiper {
+  height: auto;
+  width: 100%;
+}
+.section__swiper .swiper .swiper-slide {
+  width: 500px;
+}
+.section__swiper .swiper .swiper-slide .slide {
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   width: 50%;
-  background: red;
+  background-color: #2a2a2a;
   margin-inline: auto;
   height: 80%;
+  margin-bottom: 2rem;
+}
+.section__swiper .swiper h2,
+.section__swiper .swiper p {
+  text-align: center;
+}
+.section__swiper .swiper p {
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.section__swiper .swiper h2 {
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  margin-bottom: 2rem;
 }
 
 footer {

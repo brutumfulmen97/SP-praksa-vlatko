@@ -5,17 +5,21 @@
   margin: 0;
   border: 0;
   font-family: roboto, sans-serif;
-  color: white;
+}
+
+.light-mode {
+  background: white;
+  color: black;
 }
 
 body {
-  background: black;
+  background: #000;
+  color: white;
 }
 
 .swiper {
   width: 600px;
   height: 300px;
-  background: #000;
 }
 
 /**
@@ -49,6 +53,7 @@ a {
 
 .btn-primary {
   background: #b50014;
+  color: white;
   border-radius: 30px;
   border: 1px solid white;
   font-size: 16px;
@@ -56,7 +61,6 @@ a {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
-  color: white;
   padding: 1rem 2rem;
   margin-right: 1rem;
 }
@@ -77,6 +81,7 @@ header .header__main {
   align-items: center;
 }
 header .header__main .header__logo {
+  cursor: pointer;
   width: 150px;
   aspect-ratio: 1/1;
   display: flex;
@@ -160,9 +165,8 @@ header .header__nav-sm .mobile-menu {
   transition: all 0.3s ease-in-out;
   z-index: 10;
   width: 100%;
+  background: #000;
   height: 100vh;
-  background: #959595;
-  color: white;
 }
 header .header__nav-sm .mobile-menu .close-btn {
   border-radius: 50%;
@@ -211,8 +215,8 @@ header .header__opentime div {
 }
 
 .landing {
-  color: white;
   position: relative;
+  color: white;
 }
 .landing img {
   width: 100%;
@@ -246,8 +250,6 @@ header .header__opentime div {
   gap: 3rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background: black;
-  color: white;
 }
 .section__dry-aged .section__dry-aged-left {
   flex: 1;
@@ -311,7 +313,7 @@ header .header__opentime div {
   text-align: left;
 }
 .section__kurs .section__kurs-info button {
-  background-color: white;
+  background: white;
   color: black;
   border-radius: 30px;
   font-size: 16px;
@@ -329,8 +331,6 @@ header .header__opentime div {
 
 .section__centered {
   padding-top: 6rem;
-  background: black;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,13 +339,15 @@ header .header__opentime div {
 }
 .section__centered p {
   width: 40%;
+  font-size: 18px;
   text-align: center;
+  color: white;
+  font-weight: 800;
 }
 
 .logo-divider {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,7 +357,6 @@ header .header__opentime div {
 }
 
 .section__menu {
-  background: black;
   width: 100%;
   display: flex;
   padding-inline: 20%;
@@ -370,11 +371,9 @@ header .header__opentime div {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #000;
   width: 100%;
   padding: 1rem;
   text-align: center;
-  color: white;
   opacity: 0.8;
   letter-spacing: 5px;
 }
@@ -441,7 +440,7 @@ header .header__opentime div {
   text-align: center;
 }
 .section__cta .filter .section__cta-info button {
-  background-color: white;
+  background: white;
   color: black;
   padding: 1rem 2rem;
   border-radius: 30px;
@@ -456,24 +455,24 @@ header .header__opentime div {
   width: 100%;
   padding-inline: 20%;
   padding-top: 6rem;
-  background: black;
-  color: white;
   display: flex;
   justify-content: center;
 }
 .section__partner .section__partner-image {
   width: 100%;
 }
-.section__partner .section__partner-image img {
+.section__partner .section__partner-image svg {
   margin-left: 25%;
   width: 50%;
+}
+.section__partner .section__partner-image svg path {
+  fill: white;
 }
 .section__partner .section__partner-info {
   padding-left: 5rem;
   width: 100%;
 }
 .section__partner .section__partner-info h2 {
-  color: white;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0em;
@@ -482,7 +481,6 @@ header .header__opentime div {
 }
 
 .section__awards {
-  background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -491,7 +489,6 @@ header .header__opentime div {
 }
 .section__awards h2 {
   margin-top: -60px;
-  color: white;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
@@ -520,9 +517,7 @@ header .header__opentime div {
 }
 
 .section__swiper {
-  background: #000;
   width: 100%;
-  color: white;
   padding-bottom: 2rem;
 }
 .section__swiper .slider-button {
@@ -574,6 +569,7 @@ footer {
   background: #a62120;
   padding-top: 1rem;
   width: 100%;
+  color: white;
 }
 footer .footer__main {
   width: 100%;
@@ -592,7 +588,6 @@ footer .footer__main .footer__main-info {
 }
 footer .footer__main .footer__main-info div {
   margin-left: 10px;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -682,8 +677,13 @@ footer .footer__main-copyright span {
   .landing__content {
     position: relative !important;
     width: 100% !important;
-    background: #000 !important;
+    background: black !important;
+    color: white !important;
     padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .landing__content h1 {
+    margin-bottom: 2rem;
   }
   .section__kurs {
     display: block;
@@ -745,13 +745,13 @@ footer .footer__main-copyright span {
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 32px !important;
+    font-size: 38px !important;
   }
   h2 {
-    font-size: 28px !important;
+    font-size: 32px !important;
   }
   p {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   .header__opentime {
     height: auto !important;

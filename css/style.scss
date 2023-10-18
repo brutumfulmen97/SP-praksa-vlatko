@@ -5,17 +5,22 @@
     margin: 0;
     border: 0;
     font-family: roboto, sans-serif;
-    color: white;
+}
+
+.light-mode {
+    background: white;
+    color: black;
 }
 
 body {
-    background: black;
+    background: #000;
+    color: white;
 }
 
 .swiper {
     width: 600px;
     height: 300px;
-    background: #000;
+    // background: #000;
 }
 
 /**
@@ -23,7 +28,6 @@ body {
 
 */
 $primary-color: #b50014;
-$secondary-color: #121212;
 $padding-y: 6rem;
 
 $lg: 1330px;
@@ -57,6 +61,7 @@ a {
 
 .btn-primary {
     background: $primary-color;
+    color: white;
     border-radius: 30px;
     border: 1px solid white;
 
@@ -65,7 +70,6 @@ a {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
-    color: white;
     padding: 1rem 2rem;
     margin-right: 1rem;
 }
@@ -86,6 +90,7 @@ header {
         align-items: center;
 
         .header__logo {
+            cursor: pointer;
             width: 150px;
             aspect-ratio: 1/1;
             display: flex;
@@ -197,9 +202,8 @@ header {
             transition: all 0.3s ease-in-out;
             z-index: 10;
             width: 100%;
+            background: #000;
             height: 100vh;
-            background: #959595;
-            color: white;
             a {
                 border-bottom: 2px solid rgb(199, 199, 199);
                 text-transform: uppercase;
@@ -246,9 +250,8 @@ header {
 }
 
 .landing {
-    color: white;
     position: relative;
-
+    color: white;
     img {
         width: 100%;
     }
@@ -285,8 +288,6 @@ header {
     gap: 3rem;
     padding-top: $padding-y;
     padding-bottom: $padding-y;
-    background: black;
-    color: white;
 
     .section__dry-aged-left {
         flex: 1;
@@ -361,7 +362,7 @@ header {
         }
 
         button {
-            background-color: white;
+            background: white;
             color: black;
             border-radius: 30px;
             font-size: 16px;
@@ -383,8 +384,6 @@ header {
 
 .section__centered {
     padding-top: $padding-y;
-    background: black;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -392,14 +391,16 @@ header {
     gap: 3rem;
     p {
         width: 40%;
+        font-size: 18px;
         text-align: center;
+        color: white;
+        font-weight: 800;
     }
 }
 
 .logo-divider {
     padding-top: $padding-y;
     padding-bottom: $padding-y;
-    background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -410,7 +411,6 @@ header {
 }
 
 .section__menu {
-    background: black;
     width: 100%;
     display: flex;
     padding-inline: 20%;
@@ -423,11 +423,9 @@ header {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: #000;
             width: 100%;
             padding: 1rem;
             text-align: center;
-            color: white;
             opacity: 0.8;
             letter-spacing: 5px;
         }
@@ -502,7 +500,7 @@ header {
             }
 
             button {
-                background-color: white;
+                background: white;
                 color: black;
                 padding: 1rem 2rem;
                 border-radius: 30px;
@@ -520,16 +518,17 @@ header {
     width: 100%;
     padding-inline: 20%;
     padding-top: $padding-y;
-    background: black;
-    color: white;
     display: flex;
     justify-content: center;
 
     .section__partner-image {
         width: 100%;
-        img {
+        svg {
             margin-left: 25%;
             width: 50%;
+            path {
+                fill: white;
+            }
         }
     }
 
@@ -537,7 +536,6 @@ header {
         padding-left: 5rem;
         width: 100%;
         h2 {
-            color: white;
             font-weight: 700;
             line-height: 26px;
             letter-spacing: 0em;
@@ -548,7 +546,6 @@ header {
 }
 
 .section__awards {
-    background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -556,7 +553,6 @@ header {
     padding-inline: 20%;
     h2 {
         margin-top: -60px;
-        color: white;
         font-weight: 700;
         line-height: 42px;
         letter-spacing: 0em;
@@ -589,9 +585,7 @@ header {
     }
 }
 .section__swiper {
-    background: #000;
     width: 100%;
-    color: white;
     padding-bottom: 2rem;
     .slider-button {
         margin-top: 2rem;
@@ -697,6 +691,7 @@ footer {
     background: #a62120;
     padding-top: 1rem;
     width: 100%;
+    color: white;
     .footer__main {
         width: 100%;
         padding-inline: 20%;
@@ -716,7 +711,6 @@ footer {
 
             div {
                 margin-left: 10px;
-                color: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -829,8 +823,13 @@ footer {
     .landing__content {
         position: relative !important;
         width: 100% !important;
-        background: #000 !important;
+        background: black !important;
+        color: white !important;
+        h1 {
+            margin-bottom: 2rem;
+        }
         padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .section__kurs {
@@ -899,15 +898,15 @@ footer {
 
 @media screen and (max-width: $sm) {
     h1 {
-        font-size: 32px !important;
+        font-size: 38px !important;
     }
 
     h2 {
-        font-size: 28px !important;
+        font-size: 32px !important;
     }
 
     p {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 
     .header__opentime {

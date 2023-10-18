@@ -1,6 +1,8 @@
 const hamburger = document.querySelector(".header__nav-sm");
 const mobileMenu = document.querySelector(".mobile-menu");
 const closeBtn = document.querySelector(".close-btn");
+const logo = document.querySelector(".header__logo");
+const jre = document.querySelectorAll(".jre");
 
 hamburger.addEventListener("click", () => {
     mobileMenu.classList.add("mobile-menu-animation");
@@ -23,7 +25,6 @@ const swiper = new Swiper(".swiper", {
         scale: 0.8,
         depth: 50,
         modifier: 1,
-        slideShadows: true,
     },
     speed: 400,
     // spaceBetween: 100,
@@ -46,3 +47,21 @@ const swiper = new Swiper(".swiper", {
 AOS.init();
 
 const rellax = new Rellax(".relax", {});
+
+let darkMode = true;
+
+logo.addEventListener("click", () => {
+    if (darkMode) {
+        document.body.classList.add("light-mode");
+        jre.forEach((j) => {
+            j.style.fill = "#000";
+        });
+        darkMode = false;
+    } else {
+        document.body.classList.remove("light-mode");
+        jre.forEach((j) => {
+            j.style.fill = "#fff";
+        });
+        darkMode = true;
+    }
+});

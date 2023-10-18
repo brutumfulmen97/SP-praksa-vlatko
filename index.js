@@ -77,17 +77,15 @@ setTimeout(function () {
     popup.style.left = left + "px";
     popup.style.top = top + "px";
     popup.style.display = "block";
-    document.body.style.overflow = "hidden"; // Disable scrolling
-}, 3000); // Show popup after 3 seconds
+    document.body.style.overflow = "hidden";
+}, 3000);
 
 function closePopup() {
     document.getElementById("overlay").style.display = "none";
-    document.body.style.overflow = "auto"; // Enable scrolling
+    document.body.style.overflow = "auto";
 }
 
 function claimDiscount() {
-    // Implement your logic to handle the discount claim
-    // For this example, we'll just close the popup
     closePopup();
 }
 

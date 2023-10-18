@@ -8,7 +8,18 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"
+            integrity="sha512-qk0XupXlge1h9I63+bC7K8850xgWnUjTgSNkfLnsqc7dWdx4031UbKjKs2cuRxsNXymkSjyzSCiryVouU74zkg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <script src="index.js" type="module"></script>
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -145,9 +156,9 @@
                 </div>
             </div>
         </div>
-        <main>
+        <main class="main">
             <section class="section__dry-aged">
-                <div class="section__dry-aged-left">
+                <div class="section__dry-aged-left" data-rellax-zindex="5">
                     <div>
                         <h2>Dry Aged</h2>
                         <h3>Alte Wutz, Dry Aged</h3>
@@ -170,7 +181,13 @@
                 </div>
                 <div class="section__dry-aged-right">
                     <div class="gore">
-                        <img src="assets/meso1.png" alt="meso" />
+                        <img
+                            src="assets/meso1.png"
+                            alt="meso"
+                            class="relax"
+                            data-rellax-speed="-1"
+                            data-rellax-percentage="0.5"
+                        />
                     </div>
                     <div class="dole">
                         <img src="assets/meso2.png" alt="meso" />
@@ -210,7 +227,11 @@
                 <button class="btn-primary">Das Handwerk</button>
             </section>
             <div class="logo-divider">
-                <img src="assets/logo-div.svg" alt="logo-divider" />
+                <img
+                    src="assets/logo-div.svg"
+                    alt="logo-divider"
+                    data-aos="fade-down"
+                />
             </div>
             <section class="section__menu">
                 <div>
@@ -271,7 +292,11 @@
                 </div>
             </section>
             <div class="logo-divider">
-                <img src="assets/logo-div.svg" alt="logo-divider" />
+                <img
+                    src="assets/logo-div.svg"
+                    alt="logo-divider"
+                    data-aos="fade-down"
+                />
             </div>
             <section class="section__awards">
                 <div><h2>Auszeichnungen</h2></div>
@@ -296,7 +321,11 @@
                 </div>
             </section>
             <div class="logo-divider">
-                <img src="assets/logo-div.svg" alt="logo-divider" />
+                <img
+                    src="assets/logo-div.svg"
+                    alt="logo-divider"
+                    data-aos="fade-down"
+                />
             </div>
             <section class="section__swiper">
                 <div class="swiper">

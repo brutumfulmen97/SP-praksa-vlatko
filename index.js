@@ -42,3 +42,7 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+AOS.init();
+
+const rellax = new Rellax(".relax", {});

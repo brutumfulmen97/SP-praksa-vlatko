@@ -65,3 +65,30 @@ logo.addEventListener("click", () => {
         darkMode = true;
     }
 });
+
+setTimeout(function () {
+    const popup = document.getElementById("overlay");
+    const popupWidth = popup.offsetWidth;
+    const popupHeight = popup.offsetHeight;
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    const left = (screenWidth - popupWidth) / 2;
+    const top = (screenHeight - popupHeight) / 2;
+    popup.style.left = left + "px";
+    popup.style.top = top + "px";
+    popup.style.display = "block";
+    document.body.style.overflow = "hidden"; // Disable scrolling
+}, 3000); // Show popup after 3 seconds
+
+function closePopup() {
+    document.getElementById("overlay").style.display = "none";
+    document.body.style.overflow = "auto"; // Enable scrolling
+}
+
+function claimDiscount() {
+    // Implement your logic to handle the discount claim
+    // For this example, we'll just close the popup
+    closePopup();
+}
+
+document.getElementById("close-button").addEventListener("click", closePopup);

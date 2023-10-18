@@ -252,12 +252,35 @@ header .header__christmastime p {
     display: flex;
   }
 }
-@media screen and (min-width: 1330px) {
+@media screen and (min-width: 1024px) {
+  header .header__logo {
+    width: 145px !important;
+    margin-left: 6rem;
+  }
+  header .header__pdf {
+    margin-right: 6rem;
+  }
+  header .header__opentime {
+    padding-right: 6rem !important;
+  }
+}
+@media screen and (min-width: 1440px) {
   header .header__nav-md {
     display: none !important;
   }
   header .header__nav-xl {
     display: flex !important;
+    gap: 1rem !important;
+  }
+  header .header__logo {
+    width: 145px !important;
+    margin-left: 12rem;
+  }
+  header .header__pdf {
+    margin-right: 12rem;
+  }
+  header .header__opentime {
+    padding-right: 12rem !important;
   }
 }
 

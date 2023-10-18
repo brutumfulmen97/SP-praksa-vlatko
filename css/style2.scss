@@ -27,7 +27,7 @@ $primary-color: #b50014;
 $padding-y: 6rem;
 $gap: 1.5rem;
 
-$lg: 1330px;
+$lg: 1440px;
 $md: 1024px;
 $sm: 768px;
 
@@ -298,6 +298,16 @@ header {
     }
 
     @media screen and (min-width: $md) {
+        .header__logo {
+            width: 145px !important;
+            margin-left: 6rem;
+        }
+        .header__pdf {
+            margin-right: 6rem;
+        }
+        .header__opentime {
+            padding-right: 6rem !important;
+        }
     }
 
     @media screen and (min-width: $lg) {
@@ -307,6 +317,18 @@ header {
 
         .header__nav-xl {
             display: flex !important;
+            gap: 1rem !important;
+        }
+
+        .header__logo {
+            width: 145px !important;
+            margin-left: 12rem;
+        }
+        .header__pdf {
+            margin-right: 12rem;
+        }
+        .header__opentime {
+            padding-right: 12rem !important;
         }
     }
 }

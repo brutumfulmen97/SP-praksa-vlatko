@@ -567,6 +567,7 @@ header {
         width: 100%;
         img {
             width: 100%;
+            margin-bottom: -4px;
         }
 
         @media screen and (min-width: 1120px) {
@@ -585,11 +586,12 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 3rem;
+    gap: $gap;
     h3 {
         width: 80%;
     }
     p {
+        width: 80%;
         font-size: 18px;
         text-align: center;
         color: white;
@@ -604,29 +606,37 @@ header {
     align-items: center;
     justify-content: center;
 
+    height: 30vh;
     img {
-        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 .section__menu {
     width: 100%;
-    display: flex;
-    padding-inline: 20%;
-    gap: 3rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 5%;
+    gap: $gap;
     padding-bottom: $padding-y;
+
+    @media #{$tablet} {
+        display: flex;
+        padding-inline: 10%;
+    }
     div {
         position: relative;
         p {
             position: absolute;
+            background: #000;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
             padding: 1rem;
             text-align: center;
-            opacity: 0.8;
-            letter-spacing: 5px;
         }
     }
 }

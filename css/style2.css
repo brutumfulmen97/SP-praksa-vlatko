@@ -391,7 +391,7 @@ header .header__christmastime p {
   flex-direction: column-reverse;
   gap: 1.5rem;
   padding-bottom: 6rem;
-  padding-top: 6rem;
+  padding-top: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .section__dry-aged {
@@ -401,6 +401,11 @@ header .header__christmastime p {
 @media only screen and (min-width: 1024px) {
   .section__dry-aged {
     flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .section__dry-aged {
+    padding-inline: 20%;
   }
 }
 .section__dry-aged .section__dry-aged-left {
@@ -466,23 +471,39 @@ header .header__christmastime p {
 
 .section__kurs {
   background: #b50014;
-  display: flex;
-  padding-left: 20%;
   color: white;
+}
+@media screen and (min-width: 1120px) {
+  .section__kurs {
+    display: flex;
+  }
 }
 .section__kurs .section__kurs-info {
   display: flex;
-  align-items: flex-start;
+  text-align: center;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  margin-right: auto;
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+@media screen and (min-width: 1120px) {
+  .section__kurs .section__kurs-info {
+    text-align: left;
+    align-items: start;
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .section__kurs .section__kurs-info {
+    padding-left: 20%;
+  }
 }
 .section__kurs .section__kurs-info h2 {
   width: 60%;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
-  text-align: left;
 }
 .section__kurs .section__kurs-info li {
   font-size: 16px;
@@ -504,8 +525,19 @@ header .header__christmastime p {
   max-width: 50%;
 }
 .section__kurs .section__kurs-image {
-  width: 50vw;
-  margin-left: auto;
+  width: 100%;
+}
+.section__kurs .section__kurs-image img {
+  width: 100%;
+}
+@media screen and (min-width: 1120px) {
+  .section__kurs .section__kurs-image {
+    width: 50vw;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: auto;
+  }
 }
 
 .section__centered {

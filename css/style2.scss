@@ -364,8 +364,8 @@ header {
 
         .landing__content-text {
             margin-top: 1rem;
-            text-align: center;
             margin-inline: auto;
+            text-align: center;
 
             width: 80%;
 
@@ -379,43 +379,70 @@ header {
         @media #{$laptop} {
             background: rgb(0, 0, 0, 0.3);
             width: 35% !important;
-            padding: 0;
+            padding: 0.5rem;
             position: absolute;
-            top: 30%;
-            height: 40%;
-            h2 {
+            top: 32%;
+            height: 45%;
+            h1,
+            p {
+                width: 80%;
+                text-align: start;
+                margin-left: auto;
+            }
+            h1 {
                 font-size: 22px !important;
             }
             p {
                 font-size: 14px !important;
             }
         }
+
+        @media #{$desktop} {
+            h1,
+            p {
+                width: 60%;
+            }
+
+            h1 {
+                font-size: 38px !important;
+            }
+        }
     }
 
-    .mesar2 {
-        filter: hue-rotate(30deg);
-    }
+    // .mesar2 {
+    //     filter: hue-rotate(30deg);
+    // }
 
-    .mesar3 {
-        filter: hue-rotate(-30deg);
-    }
+    // .mesar3 {
+    //     filter: hue-rotate(-30deg);
+    // }
 }
 
 .section__dry-aged {
     width: 100%;
-    padding-inline: 20%;
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
-    padding-top: $padding-y;
-    padding-bottom: $padding-y;
+    padding-inline: 5%;
 
+    display: flex;
+    flex-direction: column-reverse;
+    // justify-content: space-between;
+    gap: 1.5rem;
+    padding-bottom: $padding-y;
+    padding-top: $padding-y;
+
+    @media #{$tablet} {
+        padding-inline: 10%;
+    }
+    @media #{$laptop} {
+        flex-direction: row;
+    }
     .section__dry-aged-left {
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        gap: $gap;
+        text-align: center;
         // border: 1px solid green;
 
         p {
@@ -426,6 +453,31 @@ header {
         h3 {
             font-size: 22px;
             margin-top: 5px;
+        }
+
+        @media #{$laptop} {
+            text-align: start;
+            align-items: start;
+        }
+
+        .buttons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+
+            button {
+                width: 100%;
+            }
+
+            @media #{$laptop} {
+                display: block;
+                button {
+                    width: unset;
+                    margin-right: 1.5rem;
+                }
+            }
         }
     }
 

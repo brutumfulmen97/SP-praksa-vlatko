@@ -343,8 +343,8 @@ header .header__christmastime p {
 }
 .landing .landing__content .landing__content-text {
   margin-top: 1rem;
-  text-align: center;
   margin-inline: auto;
+  text-align: center;
   width: 80%;
 }
 .landing .landing__content .landing__content-text p {
@@ -356,40 +356,61 @@ header .header__christmastime p {
   .landing .landing__content {
     background: rgba(0, 0, 0, 0.3);
     width: 35% !important;
-    padding: 0;
+    padding: 0.5rem;
     position: absolute;
-    top: 30%;
-    height: 40%;
+    top: 32%;
+    height: 45%;
   }
-  .landing .landing__content h2 {
+  .landing .landing__content h1,
+  .landing .landing__content p {
+    width: 80%;
+    text-align: start;
+    margin-left: auto;
+  }
+  .landing .landing__content h1 {
     font-size: 22px !important;
   }
   .landing .landing__content p {
     font-size: 14px !important;
   }
 }
-.landing .mesar2 {
-  filter: hue-rotate(30deg);
-}
-.landing .mesar3 {
-  filter: hue-rotate(-30deg);
+@media only screen and (min-width: 1440px) {
+  .landing .landing__content h1,
+  .landing .landing__content p {
+    width: 60%;
+  }
+  .landing .landing__content h1 {
+    font-size: 38px !important;
+  }
 }
 
 .section__dry-aged {
   width: 100%;
-  padding-inline: 20%;
+  padding-inline: 5%;
   display: flex;
-  justify-content: space-between;
-  gap: 3rem;
-  padding-top: 6rem;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
   padding-bottom: 6rem;
+  padding-top: 6rem;
+}
+@media only screen and (min-width: 768px) {
+  .section__dry-aged {
+    padding-inline: 10%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .section__dry-aged {
+    flex-direction: row;
+  }
 }
 .section__dry-aged .section__dry-aged-left {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
 }
 .section__dry-aged .section__dry-aged-left p {
   font-weight: 300;
@@ -398,6 +419,31 @@ header .header__christmastime p {
 .section__dry-aged .section__dry-aged-left h3 {
   font-size: 22px;
   margin-top: 5px;
+}
+@media only screen and (min-width: 1024px) {
+  .section__dry-aged .section__dry-aged-left {
+    text-align: start;
+    align-items: start;
+  }
+}
+.section__dry-aged .section__dry-aged-left .buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.section__dry-aged .section__dry-aged-left .buttons button {
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .section__dry-aged .section__dry-aged-left .buttons {
+    display: block;
+  }
+  .section__dry-aged .section__dry-aged-left .buttons button {
+    width: unset;
+    margin-right: 1.5rem;
+  }
 }
 .section__dry-aged .section__dry-aged-right {
   flex: 1;

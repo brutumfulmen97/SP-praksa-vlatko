@@ -84,12 +84,16 @@ a {
   color: white;
   border-radius: 30px;
   border: 1px solid white;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
   padding: 1rem 2rem;
+}
+.btn-primary:hover {
+  background: #701717;
 }
 
 .mobile-menu-animation {
@@ -556,6 +560,7 @@ header .header__christmastime p {
 }
 .section__kurs .section__kurs-info button {
   background: white;
+  cursor: pointer;
   color: black;
   border-radius: 30px;
   font-size: 16px;
@@ -565,6 +570,9 @@ header .header__christmastime p {
   text-align: center;
   padding: 1rem 2rem;
   max-width: 50%;
+}
+.section__kurs .section__kurs-info button:hover {
+  background: #c6c6c6;
 }
 .section__kurs .section__kurs-image {
   width: 100%;
@@ -601,6 +609,11 @@ header .header__christmastime p {
   text-align: center;
   font-weight: 300;
 }
+@media only screen and (min-width: 1440px) {
+  .section__centered p {
+    width: 60%;
+  }
+}
 
 .logo-divider {
   padding-top: 6rem;
@@ -628,6 +641,7 @@ header .header__christmastime p {
 @media only screen and (min-width: 768px) {
   .section__menu {
     display: flex;
+    justify-content: center;
     padding-inline: 10%;
   }
 }
@@ -739,6 +753,7 @@ header .header__christmastime p {
 }
 .section__cta .filter .section__cta-info button {
   background: white;
+  cursor: pointer;
   color: black;
   padding: 1rem 2rem;
   border-radius: 30px;
@@ -747,6 +762,9 @@ header .header__christmastime p {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
+}
+.section__cta .filter .section__cta-info button:hover {
+  background: #c6c6c6;
 }
 
 .section__partner {

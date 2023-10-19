@@ -12,5 +12,5 @@ gulp.task("sass", function () {
         .pipe(sass().on("error", sass.logError))
         .pipe(gulp.dest("./test"));
 });
-gggg;
+
 gulp.task("default", gulp.series("watch"));

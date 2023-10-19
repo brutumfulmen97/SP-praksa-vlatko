@@ -729,8 +729,7 @@ header {
         }
 
         @media screen and (min-width: 1120px) {
-            width: 50vw !important;
-            border: 1px solid red;
+            width: 50vw;
         }
     }
 }
@@ -1054,7 +1053,8 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         justify-content: space-between;
         color: #e9caca;
         font-size: 12px;
@@ -1063,6 +1063,8 @@ footer {
 
         @media #{$laptop} {
             padding-inline: 10%;
+            padding-top: 0;
+            padding-bottom: 0;
             flex-direction: row;
         }
 

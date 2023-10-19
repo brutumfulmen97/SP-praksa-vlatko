@@ -14,28 +14,17 @@ closeBtn.addEventListener("click", () => {
     }, 0);
 });
 
-const swiper1 = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
 const swiper2 = new Swiper(".swiper", {
     effect: "coverflow",
+    themeColor: "#ffffff",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 1,
+    breakpoints: {
+        640: {
+            slidesPerView: "auto",
+        },
+    },
     coverflowEffect: {
         rotate: 0,
         stretch: 150,
@@ -83,7 +72,10 @@ logo.addEventListener("click", () => {
     }
 });
 
+let popupShown = false;
+
 setTimeout(function () {
+    document.body.style.overflow = "hidden";
     const popup = document.getElementById("overlay");
     const popupWidth = popup.offsetWidth;
     const popupHeight = popup.offsetHeight;
@@ -94,12 +86,12 @@ setTimeout(function () {
     popup.style.left = left + "px";
     popup.style.top = top + "px";
     popup.style.display = "block";
-    document.body.style.overflow = "hidden";
+    popupShown = true;
 }, 3000);
 
 function closePopup() {
-    document.getElementById("overlay").style.display = "none";
     document.body.style.overflow = "auto";
+    document.getElementById("overlay").style.display = "none";
 }
 
 function claimDiscount() {

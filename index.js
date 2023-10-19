@@ -72,22 +72,20 @@ logo.addEventListener("click", () => {
     }
 });
 
-let popupShown = false;
-
-setTimeout(function () {
-    document.body.style.overflow = "hidden";
-    const popup = document.getElementById("overlay");
-    const popupWidth = popup.offsetWidth;
-    const popupHeight = popup.offsetHeight;
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    const left = (screenWidth - popupWidth) / 2;
-    const top = (screenHeight - popupHeight) / 2;
-    popup.style.left = left + "px";
-    popup.style.top = top + "px";
-    popup.style.display = "block";
-    popupShown = true;
-}, 3000);
+// setTimeout(function () {
+//     document.body.style.overflow = "hidden";
+//     const popup = document.getElementById("overlay");
+//     const popupWidth = popup.offsetWidth;
+//     const popupHeight = popup.offsetHeight;
+//     const screenWidth = window.innerWidth;
+//     const screenHeight = window.innerHeight;
+//     const left = (screenWidth - popupWidth) / 2;
+//     const top = (screenHeight - popupHeight) / 2;
+//     popup.style.left = left + "px";
+//     popup.style.top = top + "px";
+//     popup.style.display = "block";
+//     popupShown = true;
+// }, 3000);
 
 function closePopup() {
     document.body.style.overflow = "auto";

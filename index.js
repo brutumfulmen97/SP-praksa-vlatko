@@ -62,6 +62,7 @@ logo.addEventListener("click", () => {
         jre.forEach((j) => {
             j.style.fill = "#000";
         });
+
         darkMode = false;
     } else {
         document.body.classList.remove("light-mode");

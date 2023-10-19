@@ -408,6 +408,7 @@ header .header__christmastime p {
     width: 80%;
     text-align: start;
     margin-left: auto;
+    color: white;
   }
   .landing .landing__content h1 {
     font-size: 22px !important;
@@ -879,7 +880,7 @@ header .header__christmastime p {
 .section__swiper .swiper .swiper-button-next {
   margin-top: 14rem;
   width: 70%;
-  color: white;
+  color: rgb(171, 171, 171);
 }
 .section__swiper .swiper .swiper-button-prev img,
 .section__swiper .swiper .swiper-button-next img {

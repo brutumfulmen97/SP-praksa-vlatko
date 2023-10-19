@@ -33,7 +33,6 @@ $sm: 768px;
 
 img {
     max-width: 100%;
-    margin-bottom: -4px;
 }
 
 h1 {
@@ -335,30 +334,90 @@ header {
 
 .landing {
     position: relative;
-    color: white;
-    img {
+    .landing__image {
+        background-image: url(/assets/mesar-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         width: 100%;
+        height: 40vh;
+        object-fit: cover;
+
+        img {
+            display: none;
+        }
     }
 
     .landing__content {
-        background: rgb(0, 0, 0, 0.3);
-        width: 35%;
-        position: absolute;
-        top: 25%;
-        height: 50%;
+        width: 100% !important;
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         .landing__content-text {
-            margin-left: 40%;
-            width: 50%;
-            height: 100%;
             display: grid;
             place-content: center;
             text-align: center;
+            margin-inline: auto !important;
+
+            width: 80%;
 
             p {
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 24px;
+            }
+        }
+    }
+
+    // @media screen and (min-width: $sm) {
+    //     .landing__content {
+    //         position: relative !important;
+    //         width: 100% !important;
+    //         background: black !important;
+    //         color: white !important;
+    //         h1 {
+    //             margin-bottom: 2rem;
+    //         }
+    //         padding-top: 3rem;
+    //         padding-bottom: 3rem;
+
+    //         .landing__content-text {
+    //             width: 80% !important;
+
+    //             margin-inline: auto !important;
+    //             padding-left: auto;
+    //             p {
+    //                 font-size: 18px !important;
+    //             }
+    //         }
+    //     }
+    // }
+
+    @media screen and (min-width: $sm) {
+        .landing__image {
+            background-image: none;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (min-width: $md) {
+        .landing__content {
+            background: rgb(0, 0, 0, 0.3);
+            width: 35% !important;
+            position: absolute;
+            top: 25%;
+            height: 50%;
+            h2 {
+                font-size: 22px !important;
+            }
+            p {
+                font-size: 14px !important;
             }
         }
     }

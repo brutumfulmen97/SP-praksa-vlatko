@@ -14,7 +14,7 @@ closeBtn.addEventListener("click", () => {
     }, 0);
 });
 
-const swiper2 = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
     effect: "coverflow",
     themeColor: "#ffffff",
     grabCursor: true,
@@ -33,17 +33,11 @@ const swiper2 = new Swiper(".swiper", {
         modifier: 1,
     },
     speed: 400,
-    // spaceBetween: 100,
-    // Optional parameters
     direction: "horizontal",
     loop: true,
-
-    // If we need pagination
     pagination: {
         el: ".swiper-pagination",
     },
-
-    // Navigation arrows
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

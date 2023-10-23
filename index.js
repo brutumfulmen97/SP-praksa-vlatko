@@ -1,8 +1,9 @@
 const hamburger = document.querySelector(".header__nav-sm");
 const mobileMenu = document.querySelector(".mobile-menu");
 const closeBtn = document.querySelector(".close-btn");
-const logo = document.querySelector(".header__logo");
-const jre = document.querySelectorAll(".jre");
+const darkModeToggle = document.querySelector(".dark-mode-toggle");
+const jre = document.querySelector(".jre");
+const logoDivs = document.querySelectorAll(".logo-div");
 
 hamburger.addEventListener("click", () => {
     mobileMenu.classList.add("mobile-menu-animation");
@@ -49,44 +50,54 @@ const rellax = new Rellax(".relax", {});
 
 let darkMode = true;
 
-logo.addEventListener("click", () => {
+darkModeToggle.addEventListener("change", () => {
     if (darkMode) {
         document.body.classList.add("light-mode");
-        jre.forEach((j) => {
-            j.style.fill = "#000";
+        jre.attributes.src.value = "./assets/jre2.svg";
+        logoDivs.forEach((img) => {
+            img.attributes.src.value = "./assets/logo-div2.svg";
         });
 
         darkMode = false;
     } else {
         document.body.classList.remove("light-mode");
-        jre.forEach((j) => {
-            j.style.fill = "#fff";
+        jre.attributes.src.value = "./assets/jre.svg";
+        logoDivs.forEach((img) => {
+            img.attributes.src.value = "./assets/logo-div.svg";
         });
         darkMode = true;
     }
 });
 
-function wait(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
+let debounceTimer;
+const debounce = (callback, time) => {
+    window.clearTimeout(debounceTimer);
+    debounceTimer = window.setTimeout(callback, time);
+};
+
+function showPopup() {
+    setTimeout(() => {
+        console.log(123);
+        document.body.style.overflow = "hidden";
+        const popup = document.getElementById("overlay");
+        const popupWidth = popup.offsetWidth;
+        const popupHeight = popup.offsetHeight;
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        const left = (screenWidth - popupWidth) / 2;
+        const top = (screenHeight - popupHeight) / 2;
+        popup.style.left = left + "px";
+        popup.style.top = top + "px";
+        popup.style.display = "block";
+    }, 3000);
+    window.removeEventListener("scroll", debouncedShowPopup);
 }
 
-async function showPopup() {
-    await wait(3000);
-    document.body.style.overflow = "hidden";
-    const popup = document.getElementById("overlay");
-    const popupWidth = popup.offsetWidth;
-    const popupHeight = popup.offsetHeight;
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    const left = (screenWidth - popupWidth) / 2;
-    const top = (screenHeight - popupHeight) / 2;
-    popup.style.left = left + "px";
-    popup.style.top = top + "px";
-    popup.style.display = "block";
-    window.removeEventListener("scroll", showPopup);
+function debouncedShowPopup() {
+    debounce(showPopup, 500);
 }
 
-// window.addEventListener("scroll", showPopup);
+window.addEventListener("scroll", debouncedShowPopup);
 
 function closePopup() {
     document.body.style.overflow = "auto";

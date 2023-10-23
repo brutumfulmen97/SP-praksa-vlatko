@@ -46,8 +46,6 @@ const swiper = new Swiper(".swiper", {
 
 AOS.init();
 
-const rellax = new Rellax(".relax", {});
-
 const paralax = document.getElementsByClassName("paralax");
 new simpleParallax(paralax, {
     orientation: "down",

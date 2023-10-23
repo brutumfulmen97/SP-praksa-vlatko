@@ -15,7 +15,7 @@ header {
             margin-left: 100px;
 
             @media #{$tablet} {
-                margin-left: calc(150px + 5vw);
+                margin-left: calc(150px);
             }
 
             @media #{$laptop} {

@@ -1,5 +1,3 @@
-@import "../vars";
-
 .landing {
     position: relative;
     .landing__image {
@@ -85,14 +83,6 @@
             }
         }
     }
-
-    // .mesar2 {
-    //     filter: hue-rotate(30deg);
-    // }
-
-    // .mesar3 {
-    //     filter: hue-rotate(-30deg);
-    // }
 }
 
 .section__dry-aged {
@@ -410,7 +400,6 @@
             gap: 2rem;
 
             h2 {
-                color: white;
                 font-weight: 700;
                 line-height: 26px;
                 letter-spacing: 0em;

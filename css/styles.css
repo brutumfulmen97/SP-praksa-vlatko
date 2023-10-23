@@ -16,7 +16,7 @@ header .header__main .dark-mode-toggle {
 }
 @media only screen and (min-width: 768px) {
   header .header__main .dark-mode-toggle {
-    margin-left: calc(150px + 5vw);
+    margin-left: 150px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -927,7 +927,6 @@ footer .footer__main-copyright p {
   gap: 2rem;
 }
 .section__cta .filter .section__cta-info h2 {
-  color: white;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0em;

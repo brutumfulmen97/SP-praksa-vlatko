@@ -795,11 +795,8 @@ header .header__christmastime p {
 .section__partner .section__partner-image {
   width: 100%;
 }
-.section__partner .section__partner-image svg {
+.section__partner .section__partner-image img {
   max-width: 18rem;
-}
-.section__partner .section__partner-image svg path {
-  fill: white;
 }
 .section__partner .section__partner-info {
   width: 100%;

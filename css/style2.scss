@@ -824,11 +824,8 @@ header {
 
     .section__partner-image {
         width: 100%;
-        svg {
+        img {
             max-width: 18rem;
-            path {
-                fill: white;
-            }
         }
     }
 

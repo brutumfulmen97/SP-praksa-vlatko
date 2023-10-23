@@ -48,8 +48,9 @@ AOS.init();
 
 const paralax = document.getElementsByClassName("paralax");
 new simpleParallax(paralax, {
+    maxTransition: 100,
     orientation: "down",
-    scale: 1.5,
+    scale: 1.8,
     overflow: true,
 });
 

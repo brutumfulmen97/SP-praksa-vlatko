@@ -16,9 +16,11 @@ closeBtn.addEventListener("click", () => {
 
 const swiper = new Swiper(".swiper", {
     effect: "coverflow",
+    slideShadows: true,
     themeColor: "#ffffff",
     grabCursor: true,
     centeredSlides: true,
+    spaceBetween: 50,
     slidesPerView: 1,
     breakpoints: {
         640: {
@@ -35,9 +37,6 @@ const swiper = new Swiper(".swiper", {
     speed: 400,
     direction: "horizontal",
     loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -87,7 +86,7 @@ async function showPopup() {
     window.removeEventListener("scroll", showPopup);
 }
 
-window.addEventListener("scroll", showPopup);
+// window.addEventListener("scroll", showPopup);
 
 function closePopup() {
     document.body.style.overflow = "auto";

@@ -170,8 +170,16 @@ header .header__nav .header__nav-md .dropdown {
   display: inline-block;
   cursor: pointer;
 }
+header .header__nav .header__nav-md .dropdown .dropdown-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+header .header__nav .header__nav-md .dropdown .dropdown-title img {
+  width: 1rem;
+}
 header .header__nav .header__nav-md .dropdown .dropdown-content {
-  border-radius: 10px;
   display: none;
   position: absolute;
   top: 20px;
@@ -180,12 +188,6 @@ header .header__nav .header__nav-md .dropdown .dropdown-content {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-header .header__nav .header__nav-md .dropdown .dropdown-content :first-child {
-  border-radius: 10px 10px 0 0;
-}
-header .header__nav .header__nav-md .dropdown .dropdown-content :last-child {
-  border-radius: 0 0 10px 10px;
 }
 header .header__nav .header__nav-md .dropdown .dropdown-content a {
   color: black;
@@ -501,18 +503,20 @@ header .header__christmastime p {
   flex-shrink: 0;
 }
 .section__dry-aged .section__dry-aged-right .gore {
+  display: grid;
+  place-items: center;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 .section__dry-aged .section__dry-aged-right .dole {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3%;
+  gap: 15px;
 }
 .section__dry-aged .section__dry-aged-right .dole img {
-  width: 30%;
+  width: calc(33.3333333333% - 7.5px);
 }
 
 .section__kurs {
@@ -882,27 +886,59 @@ header .header__christmastime p {
   height: auto;
   width: 100%;
   position: relative;
+  padding-bottom: 5rem;
+}
+.section__swiper .swiper .swiper-slide-shadow-left,
+.section__swiper .swiper .swiper-slide-shadow-right {
+  background: none;
 }
 .section__swiper .swiper .znak {
+  display: none;
   position: absolute;
   z-index: 1000;
-  bottom: 5%;
-  right: 45%;
+  bottom: 6rem;
+  right: 42%;
+}
+@media only screen and (min-width: 768px) {
+  .section__swiper .swiper .znak {
+    display: block !important;
+  }
 }
 .section__swiper .swiper .swiper-button-prev,
 .section__swiper .swiper .swiper-button-next {
-  margin-top: 14rem;
-  width: 70%;
-  color: rgb(171, 171, 171);
+  margin-top: 18rem;
+  width: 60%;
+  color: rgb(255, 255, 255);
 }
 .section__swiper .swiper .swiper-button-prev img,
 .section__swiper .swiper .swiper-button-next img {
   background: red;
 }
+.section__swiper .swiper .swiper-button-prev::after,
+.section__swiper .swiper .swiper-button-next::after {
+  outline: 2px solid rgb(255, 255, 255);
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+@media screen and (min-width: 440px) {
+  .section__swiper .swiper .swiper-button-prev,
+  .section__swiper .swiper .swiper-button-next {
+    margin-top: 14rem;
+  }
+}
 @media only screen and (min-width: 768px) {
   .section__swiper .swiper .swiper-button-prev,
   .section__swiper .swiper .swiper-button-next {
     margin-top: 0 !important;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .section__swiper .swiper .swiper-button-prev,
+  .section__swiper .swiper .swiper-button-next {
     width: 60%;
   }
 }
@@ -910,8 +946,8 @@ header .header__christmastime p {
   width: 500px;
 }
 .section__swiper .swiper .swiper-slide .slide {
+  box-shadow: none;
   padding: 2rem;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -922,10 +958,14 @@ header .header__christmastime p {
   margin-inline: auto;
   height: 80%;
   margin-bottom: 2rem;
+  filter: brightness(0.8);
 }
 .section__swiper .swiper .swiper-slide .slide p,
 .section__swiper .swiper .swiper-slide .slide h4 {
   color: rgba(210, 210, 210, 0.705);
+}
+.section__swiper .swiper .swiper-slide-active {
+  filter: brightness(1.5);
 }
 .section__swiper .swiper h4,
 .section__swiper .swiper p {

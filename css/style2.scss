@@ -181,8 +181,17 @@ header {
                 display: inline-block;
                 cursor: pointer;
 
+                .dropdown-title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    img {
+                        width: 1rem;
+                    }
+                }
+
                 .dropdown-content {
-                    border-radius: 10px;
                     display: none;
                     position: absolute;
                     top: 20px;
@@ -191,14 +200,6 @@ header {
                     min-width: 160px;
                     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                     z-index: 1;
-
-                    :first-child {
-                        border-radius: 10px 10px 0 0;
-                    }
-
-                    :last-child {
-                        border-radius: 0 0 10px 10px;
-                    }
 
                     a {
                         color: black;
@@ -530,17 +531,19 @@ header {
         flex-shrink: 0;
 
         .gore {
+            display: grid;
+            place-items: center;
             width: 100%;
-            margin-bottom: 1rem;
+            margin-bottom: 15px;
         }
         .dole {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 3%;
+            gap: 15px;
             img {
-                width: 30%;
+                width: calc(100% / 3 - 7.5px);
             }
         }
     }
@@ -911,12 +914,23 @@ header {
         height: auto;
         width: 100%;
         position: relative;
+        padding-bottom: 5rem;
+
+        .swiper-slide-shadow-left,
+        .swiper-slide-shadow-right {
+            background: none;
+        }
 
         .znak {
+            display: none;
             position: absolute;
             z-index: 1000;
-            bottom: 5%;
-            right: 45%;
+            bottom: 6rem;
+            right: 42%;
+
+            @media #{$tablet} {
+                display: block !important;
+            }
         }
 
         .swiper-button-prev,
@@ -924,12 +938,29 @@ header {
             img {
                 background: red;
             }
-            margin-top: 14rem;
-            width: 70%;
-            color: rgb(171, 171, 171);
+            margin-top: 18rem;
+            width: 60%;
+            color: rgb(255, 255, 255);
+
+            &::after {
+                outline: 2px solid rgb(255, 255, 255);
+                width: 60px;
+                height: 60px;
+                display: grid;
+                place-content: center;
+                border-radius: 50%;
+            }
+
+            @media screen and (min-width: 440px) {
+                margin-top: 14rem;
+            }
 
             @media #{$tablet} {
                 margin-top: 0 !important;
+                width: 50%;
+            }
+
+            @media #{$desktop} {
                 width: 60%;
             }
         }
@@ -937,8 +968,8 @@ header {
             width: 500px;
 
             .slide {
+                box-shadow: none;
                 padding: 2rem;
-                border-radius: 10px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -949,6 +980,7 @@ header {
                 margin-inline: auto;
                 height: 80%;
                 margin-bottom: 2rem;
+                filter: brightness(0.8);
 
                 p,
                 h4 {
@@ -956,6 +988,11 @@ header {
                 }
             }
         }
+
+        .swiper-slide-active {
+            filter: brightness(1.5);
+        }
+
         h4,
         p {
             text-align: center;

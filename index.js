@@ -48,6 +48,13 @@ AOS.init();
 
 const rellax = new Rellax(".relax", {});
 
+const paralax = document.getElementsByClassName("paralax");
+new simpleParallax(paralax, {
+    orientation: "down",
+    scale: 1.5,
+    overflow: true,
+});
+
 let darkMode = true;
 
 darkModeToggle.addEventListener("change", () => {
@@ -77,7 +84,6 @@ const debounce = (callback, time) => {
 
 function showPopup() {
     setTimeout(() => {
-        console.log(123);
         document.body.style.overflow = "hidden";
         const popup = document.getElementById("overlay");
         const popupWidth = popup.offsetWidth;
@@ -97,7 +103,7 @@ function debouncedShowPopup() {
     debounce(showPopup, 500);
 }
 
-window.addEventListener("scroll", debouncedShowPopup);
+// window.addEventListener("scroll", debouncedShowPopup);
 
 function closePopup() {
     document.body.style.overflow = "auto";

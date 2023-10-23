@@ -102,7 +102,7 @@ function debouncedShowPopup() {
     debounce(showPopup, 500);
 }
 
-// window.addEventListener("scroll", debouncedShowPopup);
+window.addEventListener("scroll", debouncedShowPopup);
 
 function closePopup() {
     document.body.style.overflow = "auto";

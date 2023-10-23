@@ -1,0 +1,117 @@
+.section__swiper {
+    width: 100%;
+    padding-bottom: 2rem;
+    .slider-button {
+        margin-top: 2rem;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+
+    .swiper {
+        height: auto;
+        width: 100%;
+        position: relative;
+        padding-bottom: 5rem;
+
+        .swiper-slide-shadow-left,
+        .swiper-slide-shadow-right {
+            background: none;
+        }
+
+        .znak {
+            display: none;
+            position: absolute;
+            z-index: 1000;
+            bottom: 6rem;
+            right: 42%;
+
+            @media #{$tablet} {
+                display: block !important;
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            img {
+                background: red;
+            }
+            margin-top: 18rem;
+            width: 60%;
+            color: rgb(255, 255, 255);
+
+            &::after {
+                border: 2px solid rgb(255, 255, 255);
+                outline: 3px solid #222222;
+                width: 60px;
+                height: 60px;
+                display: grid;
+                place-content: center;
+                border-radius: 50%;
+                background: #222222;
+                background-blend-mode: overlay;
+            }
+
+            @media screen and (min-width: 440px) {
+                margin-top: 14rem;
+            }
+
+            @media #{$tablet} {
+                margin-top: 0 !important;
+                width: 50%;
+            }
+
+            @media #{$desktop} {
+                width: 60%;
+            }
+        }
+        .swiper-slide {
+            width: 500px;
+
+            .slide {
+                box-shadow: none;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                width: 80%;
+                background-color: #2a2a2a;
+                margin-inline: auto;
+                height: 80%;
+                margin-bottom: 2rem;
+                filter: brightness(0.8);
+
+                p,
+                h4 {
+                    color: rgba(210, 210, 210, 0.705);
+                }
+            }
+        }
+
+        .swiper-slide-active {
+            filter: brightness(1.5);
+        }
+
+        h4,
+        p {
+            text-align: center;
+        }
+
+        p {
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0em;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 0em;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+}

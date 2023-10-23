@@ -1,0 +1,110 @@
+footer {
+    background: #a62120;
+    padding-top: 1rem;
+    width: 100%;
+    color: white;
+    .footer__main {
+        width: 100%;
+        padding-inline: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+
+        padding-bottom: 1rem;
+
+        @media #{$tablet} {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        @media #{$laptop} {
+            padding-inline: 10%;
+        }
+
+        @media #{$desktop} {
+            padding-inline: 20%;
+        }
+
+        div {
+            // border: 1px solid green;
+            width: 100%;
+        }
+
+        .footer__main-info {
+            display: flex;
+            align-items: center;
+
+            .lokacija {
+                display: none;
+                @media #{$laptop} {
+                    display: block;
+                }
+            }
+
+            div {
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                p {
+                    margin-bottom: 9px;
+                }
+
+                :last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .footer__main-logo {
+            display: grid;
+            place-content: center;
+        }
+
+        .footer__main-socials {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+    }
+    .footer__main-copyright {
+        width: 100%;
+        background: #66000b;
+        padding-inline: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        justify-content: space-between;
+        color: #e9caca;
+        font-size: 12px;
+        text-align: center;
+        font-size: 12px;
+
+        @media #{$laptop} {
+            padding-inline: 10%;
+            padding-top: 0;
+            padding-bottom: 0;
+            flex-direction: row;
+        }
+
+        @media #{$desktop} {
+            padding-inline: 20%;
+        }
+
+        p {
+            opacity: 50%;
+            color: white;
+        }
+    }
+}
